@@ -25,4 +25,4 @@
 - [React App Repo](https://github.com/jalvarado91/mangohacks-react-workshop/)
 
 
-# iOS Development
+# Functional Programming
