@@ -33,7 +33,7 @@
 - [React App Repo](https://github.com/jalvarado91/mangohacks-react-workshop/)
 
 
-<p align="center"><img src="media/python.png" alt="Python Logo" ></p> 
+<p align="center"><img src="media/python.png" alt="Python Logo"  width="65%" height="65%"></p> 
 
 # Python
 
