@@ -10,9 +10,9 @@
 
 <h3 align="center">Add a fancy MangoHacks bandage on your README projects. </h3>
 
-## How to use it?
+<h4 align="center"> How to use it?</h4>
 
-Just copy the code, and you're done!!!!!
+<p align="center">Just copy the code, and you're done!!!!!</p>
 
 ```makdown
 <a href="https://mangohacks.com"> 
