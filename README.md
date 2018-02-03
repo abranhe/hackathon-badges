@@ -33,6 +33,8 @@
 - [React App Repo](https://github.com/jalvarado91/mangohacks-react-workshop/)
 
 
-# Functional Programming
+<p align="center"><img src="media/python.png" alt="Python Logo" ></p> 
 
+# Python
 
+- [Python Repo](https://github.com/19cah/MangoHacks/blob/master/bandage/README.md)
