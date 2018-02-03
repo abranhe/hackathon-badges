@@ -6,7 +6,7 @@
 - [Key](https://gist.github.com/GEMangoDigital/a92d076b9648b8882230b4072c6e6a99)
 
 
-<p align="cente"><img src="media/rails.png" alt="Ruby on Rails Log"></p>
+<p align="center"><img src="media/rails.png" alt="Ruby on Rails Log"></p>
 
 ## Ruby on Rails
 - [Rails app](http://intense-atoll-23621.herokuapp.com/)
