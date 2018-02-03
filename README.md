@@ -15,5 +15,9 @@
 
 <p align="center"><img src="media/reactjs.png" alt="Reactjs Logo"></p>
 
+## Git & GitHub
+
+[Git & GitHub SlideShow](https://www.slideshare.net/secret/Fg8XDgRTOADglD)
+
 ## React
 - [React App Repo](https://github.com/jalvarado91/mangohacks-react-workshop/)
