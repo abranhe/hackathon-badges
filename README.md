@@ -37,4 +37,4 @@
 
 # Python
 
-- [Python Repo](https://github.com/19cah/MangoHacks/blob/master/bandage/README.md)
+- [Python Repo](https://github.com/AnvilDev/MangoFlask)
