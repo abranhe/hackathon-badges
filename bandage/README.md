@@ -12,7 +12,7 @@
 
 <h4 align="center"> How to use it?</h4>
 
-<p align="center">Just copy the code, and you're done!!!!!</p>
+<p align="center">Just copy and paste the code, and you're done!!!!!</p>
 
 ```makdown
 <a href="https://mangohacks.com"> 
