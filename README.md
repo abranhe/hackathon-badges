@@ -7,3 +7,6 @@
 - [Rails app](http://intense-atoll-23621.herokuapp.com/)
 - [Rails Instructions](https://gist.github.com/eddroid/4904ae2d00a218ff038f12dfdfc483cd)
 - [Rails Repo](https://github.com/eddroid/rapid_prototype)
+
+## React
+- [React App Repo](https://github.com/jalvarado91/mangohacks-react-workshop/)
