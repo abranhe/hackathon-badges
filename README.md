@@ -1,5 +1,5 @@
 
-<p align="media/socket.png">
+<p align="center"><img src="media/socket.png" alt="Socket Logo"></p>
   
 ## Socket
 - [Translate Chat](https://github.com/GEMangoDigital/translate-chat)
