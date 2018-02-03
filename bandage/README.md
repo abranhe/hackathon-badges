@@ -1,4 +1,4 @@
-<p align="center"><img src="./media/mango.png" alt="MangoHacks Logo"></p>
+<p align="center"><img src="./media/MangoHacks.png" alt="MangoHacks Logo"></p>
 
 <p align="center">
 <a href="https://mangohacks.com"> 
