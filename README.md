@@ -38,3 +38,9 @@
 # Python
 
 - [Python Repo](https://github.com/AnvilDev/MangoFlask)
+
+<p align="center"><img src="media/machine-learning.png" alt="Machine Learing Image"></p> 
+
+# Machine Learning
+
+- [Machine learning Repo](https://github.com/ArcticFaded/IntroToRecurrentNeuralNetworks)
