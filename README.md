@@ -57,7 +57,11 @@
 - [MangoHacks badge](https://github.com/19cah/mangohacks)
 
 
-ShellHacks logo is own and created by [shellhacks.net](https://shellhacks.net) and all badges are desiged by [Carlos Abraham](https://github.com/19cah) created using [shilds.io](https://shields.io)
+ShellHacks logo is created and owned by [shellhacks.net](https://shellhacks.net) and all badges are desiged by [Carlos Abraham](https://github.com/19cah) created using [shields.io](https://shields.io)
+
+<p align="center">
+	<img src="https://cdn.abraham.gq/projects/ShellHacks/ShellHacks.png" alt="ShellHacks Logo" width="7%">
+</p>
 
 <!-- badge image shilds.io
 
