@@ -26,14 +26,14 @@
 
 ```html
 <a href="https://shellhacks.net/">
-	<img src="https://cdn.abraham.gq/projects/ShellHacks/2018/badge.svg" alt="ShellHacks 2019">
+	<img src="https://cdn.abraham.gq/projects/ShellHacks/2018/badge.svg" alt="ShellHacks 2018">
 </a>
 ```
 
 - ##  Markdown Syntax
 
 ```Markdown
-[![ShellHacks 2019](https://cdn.abraham.gq/projects/ShellHacks/2018/badge.svg)](https://shellhacks.net/)
+[![ShellHacks 2018](https://cdn.abraham.gq/projects/ShellHacks/2018/badge.svg)](https://shellhacks.net/)
 ```
 
 ## Example:
