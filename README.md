@@ -50,7 +50,7 @@
 - 2019 Resources: coming soon, just wait for it.
 
 
-## Projects using it
+## Who's using MangoHacks badge?
 
 > you can open a pull request to include your own
 
