@@ -50,6 +50,7 @@
 > you can open a pull request to include your own
 
 - [@abranhe/ShellHacks](https://github.com/abranhe/ShellHacks)
+- [@ShellHacksFIU/ShellHacks-Mobile](https://github.com/ShellHacksFIU/ShellHacks-Mobile)
 
 
 ## Related
