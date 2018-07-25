@@ -45,7 +45,7 @@
 
 
 
-## Projects using it
+## Who's using ShellHack badge?
 
 > you can open a pull request to include your own
 
