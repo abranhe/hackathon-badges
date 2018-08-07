@@ -51,7 +51,7 @@
 
 - [@abranhe/ShellHacks](https://github.com/abranhe/ShellHacks)
 - [@ShellHacksFIU/ShellHacks-Mobile](https://github.com/ShellHacksFIU/ShellHacks-Mobile)
-
+- [@ShellHacksFIU/ShellHacks-Web](https://github.com/ShellHacksFIU/ShellHacks-Web)
 
 ## Related
 
