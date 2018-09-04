@@ -26,14 +26,14 @@
 
 ```html
 <a href="https://mangohacks.com">
-	<img src="https://cdn.abraham.gq/projects/MangoHacks/2019/badge.svg" alt="MangoHacks 2019">
+	<img src="https://cdn.abranhe.com/projects/MangoHacks/2019/badge.svg" alt="MangoHacks 2019">
 </a>
 ```
 
 - ##  Markdown Syntax
 
 ```Markdown
-[![MangoHacks 2019](https://cdn.abraham.gq/projects/MangoHacks/2019/badge.svg)](https://mangohacks.com)
+[![MangoHacks 2019](https://cdn.abranhe.com/projects/MangoHacks/2019/badge.svg)](https://mangohacks.com)
 ```
 
 ## Example:
