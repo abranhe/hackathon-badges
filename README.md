@@ -53,6 +53,7 @@
 - [@ShellHacksFIU/ShellHacks-Mobile](https://github.com/ShellHacksFIU/ShellHacks-Mobile)
 - [@ShellHacksFIU/ShellHacks-Web](https://github.com/ShellHacksFIU/ShellHacks-Web)
 - [@TheHurricanes/x](https://github.com/TheHurricanes/x)
+- [@abranhe/shellhacks-cli](https://github.com/abranhe/shellhacks-cli)
 
 ## Related
 
