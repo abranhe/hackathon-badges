@@ -58,6 +58,7 @@
 - [@MangoHacks/Mango2019-API](https://github.com/MangoHacks/Mango2019-API)
 - [@EdTerry/CheepRX](https://github.com/EdTerry/CheepRX)
 - [@alejandrothornton/Get-IT-Done](https://github.com/alejandrothornton/Get-IT-Done)
+- [@abranhe/mangohacks-cli](https://github.com/abranhe/mangohacks-cli)
 
 
 ## Related
