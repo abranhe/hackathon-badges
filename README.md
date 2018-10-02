@@ -45,7 +45,7 @@
 
 
 
-## Who's using ShellHack badge?
+## Who's using UHack badge?
 
 > you can open a pull request to include your own
 
@@ -59,7 +59,7 @@
 UHack logo is created and owned by [UHack.miami](https://uhack.miami) and all badges are desiged by [Carlos Abraham](https://github.com/abranhe) created using [shields.io](https://shields.io)
 
 <p align="center">
-	<img src="https://cdn.abraham.gq/projects/UHack/UHack.png" alt="UHack Logo" width="7%">
+	<img src="https://cdn.abraham.gq/projects/UHack/UHack.svg" alt="UHack Logo" width="7%">
 </p>
 
 <!-- badge image shilds.io
