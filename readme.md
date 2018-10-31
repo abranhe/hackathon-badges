@@ -1,10 +1,10 @@
 <p align="center">
-	<img src="https://cdn.abraham.gq/projects/ShellHacks/ShellHacks.png" alt="ShellHacks Logo" width="50%">
+	<img src="https://cdn.abranhe.com/projects/ShellHacks/ShellHacks.png" alt="ShellHacks Logo" width="50%">
 </p>
 
 <p align="center">
 	<a href="https://shellhacks.net/">
-		<img src="https://cdn.abraham.gq/projects/ShellHacks/badge-year.svg" alt="ShellHacks 2018">
+		<img src="https://cdn.abranhe.com/projects/ShellHacks/badge-year.svg" alt="ShellHacks 2018">
 	</a>
 	<a href="https://github.com/abranhe">
  		<img src="https://abranhe.com/badge.svg" alt="Carlos Abraham">
@@ -40,8 +40,8 @@
 
 > Badges are supported up to 2021
 
-[![ShellHacks 2018](https://cdn.abraham.gq/projects/ShellHacks/2018/badge.svg)](https://shellhacks.net/)
-[![ShellHacks 2019](https://cdn.abraham.gq/projects/ShellHacks/2019/badge.svg)](https://shellhacks.net/)
+[![ShellHacks 2018](https://cdn.abranhe.com/projects/ShellHacks/2018/badge.svg)](https://shellhacks.net/)
+[![ShellHacks 2019](https://cdn.abranhe.com/projects/ShellHacks/2019/badge.svg)](https://shellhacks.net/)
 
 
 
@@ -58,12 +58,16 @@
 ## Related
 
 - [MangoHacks badge](https://github.com/abranhe/mangohacks)
+- [ShellHacks badge](https://github.com/abranhe/shellhacks)
+- [UHack badge](https://github.com/abranhe/uhack)
+- [ShellHacks CLI](https://github.com/abranhe/shellhacks-cli)
+- [MangoHacks CLI](https://github.com/abranhe/mangohacks-cli)
 
 
 ShellHacks logo is created and owned by [shellhacks.net](https://shellhacks.net) and all badges are desiged by [Carlos Abraham](https://github.com/abranhe) created using [shields.io](https://shields.io)
 
 <p align="center">
-	<img src="https://cdn.abraham.gq/projects/ShellHacks/ShellHacks.png" alt="ShellHacks Logo" width="7%">
+	<img src="https://cdn.abranhe.com/projects/ShellHacks/ShellHacks.png" alt="ShellHacks Logo" width="7%">
 </p>
 
 <!-- badge image shilds.io
