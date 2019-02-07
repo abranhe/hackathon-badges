@@ -1,10 +1,10 @@
 <p align="center">
-	<img src="https://cdn.abraham.gq/projects/MangoHacks/2018/media/MangoHacks.png" alt="MangoHacks Logo">
+	<img src="https://cdn.abranhe.com/projects/MangoHacks/2018/media/MangoHacks.png" alt="MangoHacks Logo">
 </p>
 
 <p align="center">
 	<a href="https://mangohacks.com">
-		<img src="https://cdn.abraham.gq/projects/MangoHacks/badge-year.svg" alt="MangoHacks 2018">
+		<img src="https://cdn.abranhe.com/projects/MangoHacks/badge-year.svg" alt="MangoHacks 2018">
 	</a>
 	<a href="https://github.com/abranhe">
  		<img src="https://abranhe.com/badge.svg" alt="Carlos Abraham">
@@ -38,7 +38,7 @@
 
 ## Example:
 
-[![MangoHacks 2019](https://cdn.abraham.gq/projects/MangoHacks/2019/badge.svg)](https://mangohacks.com)
+[![MangoHacks 2019](https://cdn.abranhe.com/projects/MangoHacks/2019/badge.svg)](https://mangohacks.com)
 
 
 > Badges are supported up to 2021
@@ -69,5 +69,5 @@
 MangoHacks logo is created and owned by [mangohacks.com](https://mangohacks.com) and all badges are desiged by [Carlos Abraham](https://github.com/abranhe) created using [shields.io](https://shields.io)
 
 <p align="center">
-	<img src="https://cdn.abraham.gq/projects/MangoHacks/2018/media/MangoHacks.png" alt="MangoHacks Logo" width="7%">
+	<img src="https://cdn.abranhe.com/projects/MangoHacks/2018/media/MangoHacks.png" alt="MangoHacks Logo" width="7%">
 </p>
