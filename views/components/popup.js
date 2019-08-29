@@ -65,7 +65,7 @@
 import React, { Component } from 'react';
 import { Gateway } from "react-gateway";
 import Modal from 'react-modal2';
-import ShareButtons from '../share-buttons';
+import ShareButtons from './share-buttons';
 
 export default class Popup extends Component {
   render() {

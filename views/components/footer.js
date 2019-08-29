@@ -1,5 +1,6 @@
+
 import React, { Component } from "react";
-import Popup from "../popup";
+import Popup from "./popup";
 
 export default class Footer extends Component {
 	constructor(props) {

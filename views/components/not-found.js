@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import _ from "underscore";
-import ShareButtons from "../share-buttons";
+import ShareButtons from "./share-buttons";
 
 export default class Header extends Component {
 	constructor(props) {
