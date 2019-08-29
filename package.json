@@ -8,30 +8,30 @@
     "email": "abraham@abranhe.com",
     "url": "https://abranhe.com"
   },
-  "homepage": "https://hackathon.badge.pw",
-  "dependencies": {
-    "backpack-core": "^0.8.4",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "express-react-views": "^0.11.0",
-    "gh-badges": "^2.2.1",
-    "helmet": "^3.20.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-gateway": "^3.0.0",
-    "react-helmet": "^5.2.1",
-    "react-modal2": "^5.0.0",
-    "underscore": "^1.9.1"
-  },
   "scripts": {
     "start": "node build/main.js",
     "build": "backpack build",
     "dev": "backpack dev",
     "test": "xo"
   },
+  "homepage": "https://hackathon.badge.pw",
+  "dependencies": {
+    "backpack-core": "^0.8.4",
+    "clipboard-copy": "^3.1.0",
+    "express": "^4.14.0",
+    "gh-badges": "^2.2.1",
+    "next": "latest",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-highlight": "^0.12.0",
+    "react-modal2": "^5.0.0",
+    "react-select": "^3.0.4",
+    "styled-components": "^4.3.2"
+  },
   "devDependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "next-images": "^1.1.2",
     "eslint-config-xo-react": "^0.20.0",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",

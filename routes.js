@@ -6,7 +6,7 @@ import { Badges } from './badges';
 const router = Router();
 const badgeFactory = new BadgeFactory();
 
-Badges.forEach((badge) => {
+Badges.forEach(badge => {
   router.get(`/${badge.path}`, (req, res) => {
     res.setHeader('Content-Type', 'image/svg+xml');
 
@@ -33,7 +33,7 @@ Badges.forEach((badge) => {
       format = { ...badge, template };
     }
 
-    if (!isNaN(year) && Number(year) >= 1900 && Number(year) <= 3000) {
+    if (!isNaN(year) && Number(year) >= 1900 && Number(year) <= 2099) {
       format = { ...badge, year, template };
     }
 
@@ -42,5 +42,7 @@ Badges.forEach((badge) => {
     res.send(svg);
   });
 });
+
+router.get('/api/hackathons', (req, res) => res.json(Badges));
 
 export default router;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import _ from 'underscore';
 import ShareButtons from './share-buttons';
 
 export default class Header extends Component {
@@ -28,9 +27,12 @@ export default class Header extends Component {
 
   onChange(e) {
     e.preventDefault();
-    // This.setState({ collapsed: true });
-    // this.props.dispatch(actions.search(this.refs.search.value));
-    // this.setState({ searchValue: e.target.value });
+
+    if (e.target.value) {
+      this.setState({ collapsed: true });
+    }
+
+    this.setState({ searchValue: e.target.value });
   }
 
   renderForm() {
@@ -45,9 +47,7 @@ export default class Header extends Component {
               }
 
               this.setState({ collapsed: false });
-              this.props.dispatch(actions.search(''));
               this.refs.search.select();
-              ga('send', 'event', 'Search', 'Clear', 'Search Icon');
             }.bind(this)}
           />
           <input
@@ -59,9 +59,9 @@ export default class Header extends Component {
             autoComplete="off"
             placeholder="Search a Hackathon"
             name="q"
-            // OnClick={function(e) {
-            // 	e.stopPropagation();
-            // }}
+            onClick={function(e) {
+              e.stopPropagation();
+            }}
             onChange={this.onChange.bind(this)}
           />
         </label>
@@ -94,15 +94,13 @@ export default class Header extends Component {
 
                 e.preventDefault();
                 this.setState({ collapsed: false });
-                this.props.dispatch(actions.search(''));
                 this.refs.search.select();
-                ga('send', 'event', 'Search', 'Clear', 'Header Logo');
               }.bind(this)}
             />
-            <ShareButtons />
+            <ShareButtons facebook={false} />
           </div>
           <div className="header-content">
-            <h1>Hackathon Badges</h1>
+            <h1>Hackathon Badges {this.state.searchValue}</h1>
             <h2>Dynamic badges for all your Hackathons projects</h2>
             <div className="search-container">{this.renderForm()}</div>
           </div>

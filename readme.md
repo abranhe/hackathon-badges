@@ -1,3 +1,5 @@
+<img src="./static/logo.svg" height="300" width="300">
+
 # Hackathon Badges
 
 > Awesome Badges for your Hackathons
