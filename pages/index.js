@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
-import Header from './components/header';
-import Hackathons from './components/hackathon';
-import Footer from './components/footer';
+import Header from './header';
+import Hackathons from './hackathons';
+import Footer from './footer';
 
 export default () => (
   <div>

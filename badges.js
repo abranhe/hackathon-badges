@@ -14,8 +14,8 @@ const mangohacks = {
     logo:
       'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/081/thumb/Screen_Shot_2018-12-27_at_1.16.21_PM.png?1545934765',
     thumbnail:
-      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/081/thumb/event_bg_square_2.jpg?1545934765'
-  }
+      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/081/thumb/event_bg_square_2.jpg?1545934765',
+  },
 };
 
 /**
@@ -34,8 +34,8 @@ const shellhacks = {
     logo:
       'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/202/thumb/__MLH_Banner__300_x_300_.png?1557514832',
     thumbnail:
-      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/202/thumb/__MLH_Banner__300_x_300_.png?1557514832'
-  }
+      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/202/thumb/__MLH_Banner__300_x_300_.png?1557514832',
+  },
 };
 
 /**
@@ -54,8 +54,8 @@ const uhack = {
   more: {
     logo:
       'https://scontent.fmia1-2.fna.fbcdn.net/v/t1.0-9/23472369_1492435167508264_4800876244545045884_n.png?_nc_cat=111&_nc_oc=AQmv9LlqOj4NyCzciofBE6Lcz6jvohY-9ZzedE5bmP5di_UGrNYkQbNvjnXrGYLuESuzDwRLvboxXzpGAswJDfpw&_nc_ht=scontent.fmia1-2.fna&oh=7907729265d4f9245e869426f0e1f2c9&oe=5DD3875E',
-    thumbnail: 'https://uhack.miami/img/um-campus.jpg'
-  }
+    thumbnail: 'https://uhack.miami/img/um-campus.jpg',
+  },
 };
 
 /**
@@ -74,8 +74,8 @@ const madhacks = {
     logo:
       'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/020/thumb/madhacks-logo.png?1539966546',
     thumbnail:
-      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/260/thumb/mad1.png?1565904760'
-  }
+      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/260/thumb/mad1.png?1565904760',
+  },
 };
 
 /**
@@ -94,8 +94,8 @@ const sunhacks = {
     logo:
       'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/201/thumb/sunhacks_icon_web__1_.jpg?1557514617',
     thumbnail:
-      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/201/thumb/sunhacksBG.png?1557514618'
-  }
+      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/201/thumb/sunhacksBG.png?1557514618',
+  },
 };
 
 /**
@@ -114,15 +114,40 @@ const pennapps = {
     logo:
       'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/262/thumb/logoSquare.jpg?1566311355',
     thumbnail:
-      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/262/thumb/backgroundImageSquare.jpg?1566311355'
-  }
+      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/262/thumb/backgroundImageSquare.jpg?1566311355',
+  },
 };
 
-export const Badges = [
+/**
+ * MinneJack Badge
+ * https://minnehack.io/
+ */
+const minnehack = {
+  path: 'minnehack',
+  name: 'MinneHack',
+  location: 'Minneapolis, MN',
+  colorA: '#000',
+  logo:
+    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAADqklEQVR42u2YTUhUURTHj7737hsy6QMCCapdFoUUBdIHZdAqEIkS2rXJVn3Qh4ta1MIWtolWRS1CJAikFlJUljhU08z43n2aYmUIGRUimYbjOM7M+7idO6P2xnmjozM5FnPg8mDux/ndc8/933sHIG95+8+NuUFkFKQlBdXvBleEwiamCZWsQ7yoK+LBpREtVaia8JI6k5L7lkZ8BiXDFpXHDVU+Pa/JvYWtzAurswo35oEtlib3IVDY6pBNS3OxWEkD0NMMxQEv7DYVsR4n1WVqLj+jUnn2ItcEAkatHgEj02BpAlZXgzDwQr6Q2E/uY53intmdtkBRRIPNOoW9jEHBbG0DHig1VOJNgss2IFNg3bhXOBz2irUYkUZTI378do17YXvKiSC8oQpHEHD4rwGyLigyVXLdpPJXHHAEvyFsNJlHckRXSF2qKLIeWG5q0r2EvMs6YDesQqhmRwdYDCp/ZO3iLicHwddQhvVjqfouCiB2MHSMMIqua6aDiI9cS91v0QBjjj4zFUoTlpfCCnT+xd5OV+TB3ABiTqJGPbQPrlPxEv5u2dv9aC28nCPAePn1Mr6je1Fcsc8ne51JJXd7o7QzHcCeJiDc7+gb2BjySnfnD0jlCSxG0oZRyWPWCSt1RajkO942aBTl5lAqQC7mrAPWjrZJ5diuCs/nK6YqtaCMBRxWKy3AXifxxQFHw37pLH4b7BPA/hrqaIkDYBjbPsDo3kA5atFV+QPq688/MuaYTnMDcocjr2CfmTSQbKFmDmAZskFEDSqdQa0UkgB5jvLzGSM8M18zBsQlWYMzv+W01DPavmOqFMvNZEDnDYd9ghZ1DeIq9YR8ibk8L0CeNzhI5yzyYxgKaRjyQPGsgPFc7Ecl4Mdno6FKpzAltt05CdKCdvE0IN6Go+3ieewUSuF4hG+OqbEcljiKQM8wBY7jxtgfu8hSWJaxzEwBTgryekzwVqccMlX5uf1K7wDII3cu1VmeFUBuE4pUkywJshnwCCfsDtPVwawDxjaMJrUlRo90s+Z47uUckFvUB+WoY0GUHgtvMIP4Bjk602FOAWOQiljLOoRjWLeBPymzCcg1N9JO+nRFuhnCvF8Q4Fw2X8CrAIXfnogHGBVqUr7kcgmY3qssAZDnFxnjYsrve5kAxnOVvOeXg8wBNfIITwSfoRTWRvxQxm8sc73mnMzfADswat/xiLyNF9yKoBtK2FOQM33aFlRAcsIvdCwsQv5fqbzlLW//iP0GvNqKnPwAjTUAAAAASUVORK5CYII=',
+  link: 'https://minnehack.io/',
+  more: {
+    logo:
+      'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/072/thumb/minnie2.png?1545058723',
+    thumbnail:
+      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/072/thumb/background_%281%29.jpg?1545058724',
+  },
+};
+
+const Badges = [
   mangohacks,
   shellhacks,
   uhack,
   madhacks,
   sunhacks,
-  pennapps
+  pennapps,
+  minnehack,
 ];
+
+module.exports = {
+  Badges,
+};

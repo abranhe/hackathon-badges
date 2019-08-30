@@ -18,15 +18,10 @@ ClickableControl.propTypes = {
 
 const markupOptions = [
   { value: 'markdown', label: 'Copy Markdown' },
-  { value: 'html', label: 'Copy HTML' }
+  { value: 'html', label: 'Copy HTML' },
 ];
 
-export default function GetMarkupButton({
-  onMarkupRequested,
-  isDisabled = false,
-  colors,
-  placeholder
-}) {
+export default function CopyButton({ onMarkupRequested, isDisabled = false, colors, placeholder }) {
   const selectRef = useRef();
 
   const MarkupFormatSelect = styled(Select)`
@@ -98,21 +93,30 @@ export default function GetMarkupButton({
       ref={selectRef}
       blurInputOnSelect
       closeMenuOnScroll
-      classNamePrefix="markup-format"
+      classNamePrefix='markup-format'
       components={{ Control: ClickableControl }}
       isDisabled={isDisabled}
       isSearchable={false}
-      menuPlacement="auto"
+      menuPlacement='auto'
       options={markupOptions}
       placeholder={placeholder}
-      value=""
+      value=''
       onChange={onOptionClick}
       onControlMouseDown={onControlMouseDown}
     />
   );
 }
 
-GetMarkupButton.propTypes = {
+CopyButton.propTypes = {
   onMarkupRequested: PropTypes.func.isRequired,
-  isDisabled: PropTypes.bool
+  isDisabled: PropTypes.bool,
+  colors: PropTypes.array,
+  placeholder: PropTypes.string,
+};
+
+CopyButton.defaultProps = {
+  onMarkupRequested: Function.prototype,
+  isDisabled: false,
+  colors: ['#0076ff', '#0076ff'],
+  placeholder: '',
 };

@@ -8,19 +8,22 @@
     "email": "abraham@abranhe.com",
     "url": "https://abranhe.com"
   },
-  "scripts": {
-    "start": "node build/main.js",
-    "build": "backpack build",
-    "dev": "backpack dev",
-    "test": "xo"
-  },
+  "license": "MIT",
   "homepage": "https://hackathon.badge.pw",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "test": "echo 'Working on it'"
+  },
   "dependencies": {
-    "backpack-core": "^0.8.4",
+    "@zeit/next-css": "^1.0.1",
     "clipboard-copy": "^3.1.0",
     "express": "^4.14.0",
     "gh-badges": "^2.2.1",
     "next": "latest",
+    "next-images": "^1.1.2",
+    "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-highlight": "^0.12.0",
@@ -29,25 +32,6 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "babel-plugin-react-css-modules": "^5.2.6",
-    "next-images": "^1.1.2",
-    "eslint-config-xo-react": "^0.20.0",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^2.0.1",
-    "xo": "^0.24.0"
-  },
-  "xo": {
-    "prettier": true,
-    "space": true,
-    "rules": {
-      "new-cap": 0,
-      "react/static-property-placement": 0
-    },
-    "extends": "xo-react"
-  },
-  "license": "MIT",
-  "prettier": {
-    "bracketSpacing": true
+    "cross-env": "^5.2.0"
   }
 }
