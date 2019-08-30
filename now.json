@@ -1,5 +1,12 @@
 {
   "version": 1,
-  "name": "hackathon-badges",
-  "alias": "hackathon-badges"
+  "type": "npm",
+  "name": "pear",
+  "alias": "pear",
+  "scale": {
+    "sfo1": {
+      "min": 1,
+      "max": "auto"
+    }
+  }
 }

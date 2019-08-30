@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Badges } from '../../badges';
+import { Badges } from '../badges';
 import Popup from './popup';
 import Badge from './badge';
 

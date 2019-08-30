@@ -6,7 +6,7 @@ const { Badges } = require('./badges');
 const router = Router();
 const badgeFactory = new BadgeFactory();
 
-Badges.forEach(badge => {
+Badges.forEach((badge) => {
   router.get(`/${badge.path}`, (req, res) => {
     res.setHeader('Content-Type', 'image/svg+xml');
 
