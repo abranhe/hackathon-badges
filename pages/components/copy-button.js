@@ -1,32 +1,13 @@
 import React, { useRef } from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Select, { components } from 'react-select';
-
-const ClickableControl = props => (
-  <components.Control
-    {...props}
-    innerProps={{
-      onMouseDown: props.selectProps.onControlMouseDown
-    }}
-  />
-);
-
-ClickableControl.propTypes = {
-  selectProps: PropTypes.object.isRequired
-};
+import Select from 'react-select';
 
 const markupOptions = [
   { value: 'markdown', label: 'Copy Markdown' },
   { value: 'html', label: 'Copy HTML' }
 ];
 
-export default function GetMarkupButton({
-  onMarkupRequested,
-  isDisabled = false,
-  colors,
-  placeholder
-}) {
+export default function GetMarkupButton({ onMarkupRequested, isDisabled = false, colors, placeholder }) {
   const selectRef = useRef();
 
   const MarkupFormatSelect = styled(Select)`
@@ -99,7 +80,6 @@ export default function GetMarkupButton({
       blurInputOnSelect
       closeMenuOnScroll
       classNamePrefix="markup-format"
-      components={{ Control: ClickableControl }}
       isDisabled={isDisabled}
       isSearchable={false}
       menuPlacement="auto"
@@ -111,8 +91,3 @@ export default function GetMarkupButton({
     />
   );
 }
-
-GetMarkupButton.propTypes = {
-  onMarkupRequested: PropTypes.func.isRequired,
-  isDisabled: PropTypes.bool
-};

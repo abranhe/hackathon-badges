@@ -1,7 +1,7 @@
-import { Router } from 'express';
-import { BadgeFactory } from 'gh-badges';
-import { MakeBadge } from './helpers';
-import { Badges } from './badges';
+const { Router } = require('express');
+const { BadgeFactory } = require('gh-badges');
+const { MakeBadge } = require('./helpers');
+const { Badges } = require('./badges');
 
 const router = Router();
 const badgeFactory = new BadgeFactory();
@@ -45,4 +45,4 @@ Badges.forEach(badge => {
 
 router.get('/api/hackathons', (req, res) => res.json(Badges));
 
-export default router;
+module.exports = router;

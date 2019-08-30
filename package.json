@@ -29,6 +29,7 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "@zeit/next-css": "^1.0.1",
     "babel-plugin-react-css-modules": "^5.2.6",
     "next-images": "^1.1.2",

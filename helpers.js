@@ -1,4 +1,4 @@
-export const MakeBadge = ({
+const MakeBadge = ({
   name = 'Hackathon',
   year = new Date().getFullYear().toString(),
   color = '#555',
@@ -6,15 +6,19 @@ export const MakeBadge = ({
   colorB,
   template = 'flat',
   logo,
-  link
+  link,
 }) => {
   return {
-    text: [name, year],
+    text: [ name, year ],
     color,
     colorA,
     colorB,
     template,
     logo,
-    links: [link, link]
+    links: [ link, link ],
   };
+};
+
+module.exports = {
+  MakeBadge,
 };
