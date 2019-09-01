@@ -33,7 +33,7 @@ class Header extends Component {
     search({ searchValue: value });
   };
 
-  onLogoClick = () => {
+  onLogoClick = () => {g
     if (!this.props.collapsed) {
       return;
     }
