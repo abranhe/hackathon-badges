@@ -21,10 +21,10 @@ const markupOptions = [
   { value: 'html', label: 'Copy HTML' },
 ];
 
-export default function CopyButton({ onMarkupRequested, isDisabled = false, colors, placeholder }) {
+function CopyButton({ onMarkupRequested, isDisabled, colors, placeholder }) {
   const selectRef = useRef();
 
-  const MarkupFormatSelect = styled(Select)`
+  const Button = styled(Select)`
     width: 200px;
 
     margin-left: auto;
@@ -89,7 +89,7 @@ export default function CopyButton({ onMarkupRequested, isDisabled = false, colo
   }
 
   return (
-    <MarkupFormatSelect
+    <Button
       ref={selectRef}
       blurInputOnSelect
       closeMenuOnScroll
@@ -117,6 +117,8 @@ CopyButton.propTypes = {
 CopyButton.defaultProps = {
   onMarkupRequested: Function.prototype,
   isDisabled: false,
-  colors: ['#0076ff', '#0076ff'],
+  colors: [ '#0076ff', '#0076ff' ],
   placeholder: '',
 };
+
+export default CopyButton;

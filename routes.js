@@ -1,12 +1,14 @@
-const { Router } = require('express');
-const { BadgeFactory } = require('gh-badges');
-const { MakeBadge } = require('./helpers');
-const { Badges } = require('./badges');
+const { Router }         = require('express');
+const { makeBadge }      = require('./helpers');
+const { BadgeFactory }   = require('gh-badges');
+const badges             = require('./badges');
 
 const router = Router();
 const badgeFactory = new BadgeFactory();
 
-Badges.forEach((badge) => {
+router.get('/api/hackathons', (req, res) => res.json(badges));
+
+badges.forEach((badge) => {
   router.get(`/${badge.path}`, (req, res) => {
     res.setHeader('Content-Type', 'image/svg+xml');
 
@@ -17,7 +19,7 @@ Badges.forEach((badge) => {
       format = { ...badge, template };
     }
 
-    const svg = badgeFactory.create(MakeBadge(format));
+    const svg = badgeFactory.create(makeBadge(format));
 
     res.send(svg);
   });
@@ -37,12 +39,10 @@ Badges.forEach((badge) => {
       format = { ...badge, year, template };
     }
 
-    const svg = badgeFactory.create(MakeBadge(format));
+    const svg = badgeFactory.create(makeBadge(format));
 
     res.send(svg);
   });
 });
-
-router.get('/api/hackathons', (req, res) => res.json(Badges));
 
 module.exports = router;

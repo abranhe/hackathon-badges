@@ -1,8 +1,8 @@
 {
   "version": 1,
   "type": "npm",
-  "name": "pear",
-  "alias": "pear",
+  "name": "badges",
+  "alias": "badges",
   "scale": {
     "sfo1": {
       "min": 1,

@@ -138,7 +138,7 @@ const minnehack = {
   },
 };
 
-const Badges = [
+module.exports = [
   mangohacks,
   shellhacks,
   uhack,
@@ -147,7 +147,3 @@ const Badges = [
   pennapps,
   minnehack,
 ];
-
-module.exports = {
-  Badges,
-};
