@@ -1,4 +1,5 @@
 import React from 'react';
+import { buildGithubIssue } from '../helpers';
 
 export default () => (
   <div className='footer'>
@@ -6,9 +7,7 @@ export default () => (
       <div className='footer__top flex-spread'>
         <div className='flex'>
           <div className='footer__contributors'>
-            <a
-              target='_blank'
-              href='https://github.com/abranhe/hackathon-badges/issues/new?title=New%20Hackathon%20Badge&body=I%20am%20adding%20a%20new%20hackathon...'>
+            <a target='_blank' href={buildGithubIssue}>
               <span>Submit a hackathon</span>
             </a>
           </div>
@@ -16,7 +15,7 @@ export default () => (
             <a
               className='footer__social-icon footer__social-icon_github'
               target='_blank'
-              href='https://github.com/abranhe/hackathon-badges/issues/new?title=New%20Hackathon%20Badge&body=I%20am%20adding%20a%20new%20hackathon...'
+              href={buildGithubIssue}
             />
           </div>
         </div>

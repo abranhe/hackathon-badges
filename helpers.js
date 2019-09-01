@@ -1,3 +1,6 @@
+const githubIssueUrl = require('new-github-issue-url');
+
+
 const makeBadge = (options) => {
   options = {
     name: 'Hackathon',
@@ -26,8 +29,24 @@ const buildHtml = ({ link, path, name }) =>
 const buildMarkdown = ({ link, path, name }) =>
   `[![${name}](https://hackathon.badge.pw/${path})](${link})`;
 
+const buildGithubIssue = githubIssueUrl({
+  title: 'New Hackathon request!!!',
+  user: 'abranhe',
+  repo: 'hackathon-badges',
+  body: `**Required***
+  
+_name_: <!-- Fill in here -->
+_website_: <!-- Fill in here -->
+
+**Not required**
+
+Official logo picture url: <!-- Fill Here -->
+`,
+});
+
 module.exports = {
   makeBadge,
   buildHtml,
   buildMarkdown,
+  buildGithubIssue,
 };
