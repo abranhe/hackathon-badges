@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Badges } from '../badges';
+import badges from '../badges';
 import Popup from './popup';
 import Badge from './badge';
 
@@ -29,7 +29,7 @@ export default class hackathon extends Component {
               </div>
             )}
             <ul>
-              {Badges.map((badge) => {
+              {badges.map((badge) => {
                 return (
                   <a
                     key={badge.path}

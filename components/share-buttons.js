@@ -36,16 +36,9 @@ function renderGithub() {
     <a
       className="social-action social-action_github"
       target="_blank"
-      href="https://github.com/kogg/instant-logos/stargazers"
+      href="https://github.com/abranhe/hackathon-badges"
       onClick={function(e) {
         e.stopPropagation();
-        ga(
-          'send',
-          'social',
-          'GitHub',
-          'Star',
-          'https://github.com/kogg/instant-logos/stargazers'
-        );
       }}
     >
       <span>star</span>
