@@ -1,5 +1,5 @@
 import types from './types';
-
+import initialState from '../store/initial-state';
 function reducers(state = initialState, action) {
   switch (action.type) {
     case types.SEARCHING:
@@ -18,6 +18,18 @@ function reducers(state = initialState, action) {
 
     case types.UNCOLLAPSE_HEADER:
       return { ...state, collapsed: false };
+
+    case types.SET_HEADING:
+      return {
+        ...state,
+        search: {
+          ...state.search,
+          heading: action.heading,
+        },
+      };
+
+    case types.CLEAR_SEARCH:
+      return initialState;
 
     default:
       return state;

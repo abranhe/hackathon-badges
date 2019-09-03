@@ -8,6 +8,9 @@ function Hackathon({ hackathon, onClick }) {
       <li className="brand-logo brand-logo_collected brand-logo_considering">
         <div className="brand-logo__image flex-center">
           <img src={hackathon.more.thumbnail} alt={hackathon.name} />
+          <div className="brand-logo-center">
+            <img src={hackathon.more.logo} alt={hackathon.name} />
+          </div>
         </div>
         <div className="brand-logo__ctas">
           <strong>{hackathon.name}</strong>

@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import Hackathon from './hackathon';
 import Popup from './popup';
+import actions from '../store/actions';
 
 class HackathonList extends Component {
   state = {
@@ -34,15 +36,18 @@ class HackathonList extends Component {
   }
 
   renderHackathons() {
-    let hackathons = this.props.featuredHackathons;
+    let hackathons = [];
 
     if (this.props.hackathons.length) {
+      this.props.setHeading({ heading: 'Search results' });
       hackathons = this.props.hackathons;
+    } else {
+      this.props.setHeading({ heading: 'Nothing found' });
     }
 
     return (
       <div>
-        {hackathons.map((hackathon) => (
+        {this.props.hackathons.map((hackathon) => (
           <Hackathon
             key={hackathon.path}
             hackathon={hackathon}
@@ -54,12 +59,10 @@ class HackathonList extends Component {
   }
 
   render() {
-    const { popup } = this.state;
-
     return (
       <div className="logos">
         <div className="content-container">
-          {popup && this.renderPopup()}
+          {this.state.popup && this.renderPopup()}
           <div>
             {this.props.heading && this.renderHeading()}
             <ul>{this.renderHackathons()}</ul>
@@ -78,10 +81,14 @@ HackathonList.defaultProps = {
   hackathons: [],
 };
 
+const mapDispatchToProps = (dispatch) => ({
+  setHeading: bindActionCreators(actions.setHeading, dispatch),
+});
+
 const mapStateToProps = (state) => ({
   hackathons: state.search.hackathons,
   heading: state.search.heading,
   featuredHackathons: state.featuredHackathons,
 });
 
-export default connect(mapStateToProps)(HackathonList);
+export default connect(mapStateToProps, mapDispatchToProps)(HackathonList);

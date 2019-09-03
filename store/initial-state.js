@@ -1,6 +1,5 @@
 import badges from '../badges';
 
-// Feature Miami Hackathons
 const filterByMiami = () => {
   return badges.filter((hackathon) => hackathon.location.includes('Miami'));
 };
@@ -8,10 +7,9 @@ const filterByMiami = () => {
 export default {
   search: {
     value: '',
-    hackathons: [],
-    heading: 'Featured hackathons',
+    hackathons: [ ...badges ],
+    heading: 'Search results',
   },
   collapsed: false,
-  // badges,
   featuredHackathons: filterByMiami(),
 };

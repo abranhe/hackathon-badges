@@ -13,7 +13,9 @@ const actions = {
       );
 
       const mixedHackathons = [ ...hackathonsByName, ...hackathonsByLocation ];
-      const hackathons = Array.from(mixedHackathons.reduce((m, t) => m.set(t.name, t), new Map()).values());
+      const hackathons = Array.from(
+        mixedHackathons.reduce((m, t) => m.set(t.name, t), new Map()).values(),
+      );
 
       dispatch({
         type: types.SEARCHING,
@@ -30,6 +32,16 @@ const actions = {
   uncollapse: () => {
     return (dispatch) => {
       dispatch({ type: types.UNCOLLAPSE_HEADER });
+    };
+  },
+  setHeading: ({ heading }) => {
+    return (dispatch) => {
+      dispatch({ type: types.SET_HEADING, heading });
+    };
+  },
+  clearSearch: () => {
+    return (dispatch) => {
+      dispatch({ type: types.CLEAR_SEARCH });
     };
   },
 };
