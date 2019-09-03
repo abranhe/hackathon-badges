@@ -1,3 +1,5 @@
+Work in Progress...
+
 <img src="./static/logo.svg" height="300" width="300">
 
 # Hackathon Badges
@@ -5,7 +7,116 @@
 > Awesome Badges for your Hackathons
 
 
-Work in Progress...
+![](https://cdn.abranhe.com/projects/hackathon-badges/screenshot.png)
+
+## Why?
+
+I started creating some badges to use on my projects READMEs for the hackathons that I participated, but I thought that it was cool to have more badges for multiple hackathons.
+
+So I decided to create differennts svg badges with diferents years for differents hackathons but it was annoying creating a new badge for each year hackathon. So I came up with the idea 💡 to create a simple API to host and search those badges. So there you have it [hackathon.badge.pw](https://hackathon.badge.pw)
+
+## Usage
+
+```
+https://hackathon.badge.pw/:hackathon?template=:template
+```
+
+or
+
+```
+https://hackathon.badge.pw/:hackathon/:year?template=:template
+```
+
+where
+
+#### Hackathon
+
+You can search all Hackathons at [/api/hackathons](https://hackathon.badge.pw/api/hackathons) or search it on our website.
+
+If you know any hackathon you can [create a issue](https://github.com/abranhe/hackathon-badges/issues/new?body=**Required***%0A++%0A_name_%3A+%3C%21--+Fill+in+here+--%3E%0A_website_%3A+%3C%21--+Fill+in+here+--%3E%0A%0A**Not+required**%0A%0AOfficial+logo+picture+url%3A+%3C%21--+Fill+Here+--%3E%0A&title=New+Hackathon+request%21%21%21) adding the hackathon or instead submit a pull request with the hackathon.
+
+#### Year
+
+Any integer between 1900 - 2099
+
+- Present
+
+Example:
+
+```md
+![Shellhacks](https://hackathon.badge.pw/shellhacks)
+```
+
+![Shellhacks](https://hackathon.badge.pw/shellhacks)
+
+- Past
+
+Example:
+
+```md
+![Shellhacks](https://hackathon.badge.pw/shellhacks/2017)
+```
+
+![Shellhacks](https://hackathon.badge.pw/shellhacks/2017)
+
+- Future
+
+Example:
+
+```md
+![Shellhacks](https://hackathon.badge.pw/shellhacks/2052)
+```
+
+![Shellhacks](https://hackathon.badge.pw/shellhacks/2052)
+
+
+#### Templates
+
+- `flat` (Default)
+
+Example:
+
+```md
+![Mangohacks](https://hackathon.badge.pw/mangohacks)
+```
+
+![Mangohacks](https://hackathon.badge.pw/mangohacks)
+
+- `plastic`
+
+Example:
+
+```md
+![Mangohacks](https://hackathon.badge.pw/mangohacks?template=plastic)
+```
+
+![Mangohacks](https://hackathon.badge.pw/mangohacks?template=plastic)
+
+- `flat-square`
+
+Example:
+
+```md
+![Mangohacks](https://hackathon.badge.pw/mangohacks?template=flat-square)
+```
+
+![Mangohacks](https://hackathon.badge.pw/mangohacks?template=flat-square)
+
+
+- `for-the-badge`
+
+Example:
+
+```md
+![Mangohacks](https://hackathon.badge.pw/mangohacks?template=for-the-badge)
+```
+
+![Mangohacks](https://hackathon.badge.pw/mangohacks?template=for-the-badge)
+
+
+## License
+
+MIT © [Abraham Hernandez](https://abranhe.com)
 
 <!-- Uhack
 

@@ -37,21 +37,8 @@ class Header extends Component {
     this.forceUpdate();
   };
 
-  onClick = (e) => {
-    // this.forceUpdate();
+  onClick = () => {
     this.props.clearSearch();
-    // e.stopPropagation();
-    // const {
-    //   searchValue: value,
-    //   collapse,
-    //   uncollapse,
-    //   collapsed,
-    //   search,
-    // } = this.props;
-
-    // value ? (!collapsed ? collapse() : null) : uncollapse();
-
-    // search({ searchValue: value });
   };
 
   render() {

@@ -119,7 +119,7 @@ const pennapps = {
 };
 
 /**
- * MinneJack Badge
+ * MinneHack Badge
  * https://minnehack.io/
  */
 const minnehack = {
@@ -138,6 +138,66 @@ const minnehack = {
   },
 };
 
+/**
+ * CitizenHacks Badge
+ * https://citizenhacks.com/
+ */
+const citizenhacks = {
+  path: 'citizenhacks',
+  name: 'CitizenHacks',
+  location: 'Toronto, ON',
+  colorA: '#ed559a',
+  logo:
+    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAEW0lEQVRYw92XXVPbRhSGtauVLMuWLIMxBtPEIYTyEUggNG2hf6P/rrf5NZ3pRXqRTIYpEAj4Q5YlWZ+r3VUPbtJpMgSMi+lMNbrYkT3z6D275z2viPPzL9J/cZGOVng9Y3WL2r0h9YzVkoScGKVXT1q/zs3eG7gRxc9th3CEYpkEinIPyDLNFqJo3fV3+wNyTzLzHOe5laabjvd9t3/Qte8JbNLsQRBuDrwfuvaG61UpnTpYFkIVohHH2333u17/pe00o/jyVE8bbGTZsh9s9d39jv2t51sp/dhO00MqXOiMPRyGL3rOC9t5NnAbcQLP0bTBZpatuv6O7YDWFX9o0ewzA7mFAsR0nBgktkhQIomGKcECnnOBE6GEXHNZ2Wd6xDWcoQqlj/3gZdd+3h+s+sN6kv6t9dbgIk6bmr2qf9g2jpb1dl31AA/PI16wqXkUNV4HrXdh8ySZVyOyMfCgwged3uNhoDN+hWWOgyzJcV11l4vtp+XjtdIZUBcLjqUEmnxZvZQrLtMXCoNGYbBS6By6S7JXXhvQNTt+GEZWxq726nHAUNsd4/BH682B9bZV7BLMCRJYEmhUO0Xmukzrqr9RPu0Xq8f8AbuYWxwYlb4KjfTVIXE9EjYSqOul033rzZ552NScMrncrX9uF+DhJYgEDCbrLqlJzA/1uToJK1KgSRmZBAz7uqT1tozjg+rbzfLpF8gr/l9ImnNtTmN6gbNQFhnJJwNXlHDLONoqH1dIdJvJR/E3jhwpuavngTYJ2JSj9dLZevnUADAal4uKmdz08qDAD+swH6SrCnUDuICzOdWDGxbjC0aEYyPBRioRPuHhUjCHIpskUrC4BVjOUZGBblhMCJ5i5rr+Z5ZjMCa4yyiVER936guUU5ynMiwmBFOhgB3CrWBXxeOCJYbzQBVBARYTggNWPIwWwQsNAuMhGVdxQnjHFB0zT5SvNf4NYI/pvwcPwJaX9c6C5I4LjlV+ZrFTCxYTKoZhdxQ35nCwjc9naGqWfU2l12sVnsZOquxkVnQqI8UTgSNReJ/Mmyx7l7bn00hRshvAscI/VNgfs+J4Ju8a1xjsDWCDsmYQbUdRK9EsrYYWBa2X8GyIzARrGVIumztnWCQkH2qiX+Jtk7+vivPKyCnRJO2E8pwIUYuTLWew2wtaXdVCs+hcyZZ08sjGDV+qJEi7tLM8JcLXRMdgRzV+WhUXlU/+PBEYknDLD5467n7XXnN9i9JcUkTPyCKVtytIp0hlSB4p5tC1BM4R4POwIKXKhAYCQjXGmmEIcWnPduBzYzH+q5FkyS/mfpFfSJ+s/7Ma/VvnAq0rnv9slIRXvS/T4VQsU+UcvquWh8Fez9npD+BbY36UDq88A3cJBq1rA2/3YxIODMamPiRgU6sJhdh9mYQdFzJpjdI70HUjGLRCYfd6/Z/a9qNhoAkhTfkiJmWArCXJqjt84gfzSVIe5W80bfCm623+5t3pubmLIPA/BP8JC/ZQZtW2rZ0AAAAASUVORK5CYII=',
+  link: 'https://citizenhacks.com/',
+  more: {
+    logo:
+      'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/221/thumb/citizenhacks_square_logo_%281%29.png?1564081526',
+    thumbnail:
+      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/221/thumb/ezgif.com-gif-maker.png?1564081527',
+  },
+};
+
+/**
+ * Hack the North Badge
+ * https://hackthenorth.com/
+ */
+const hackthenorth = {
+  path: 'hackthenorth',
+  name: 'Hack the North',
+  location: 'Waterloo, ON',
+  colorA: '#76adcc',
+  logo:
+    'data:image/png;base64,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',
+  link: 'https://hackthenorth.com/',
+  more: {
+    logo:
+      'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/222/thumb/icon_main.jpg?1564087097',
+    thumbnail:
+      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/222/thumb/mlhcover.jpg?1564087097',
+  },
+};
+
+/**
+ * BigRedHacks Badge
+ * https://bigredhacks.com/
+ */
+const bigredhacks = {
+  path: 'bigredhacks',
+  name: 'BigRedHacks',
+  location: 'Ithaca, NY',
+  colorA: '#eb463b',
+  logo:
+    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAADqElEQVR42u2Xa0gVaRiA31NHz8ycmTP375uZrrs/CiRDcstI7AJR2G3FLmtpsaStmXYhukGpJUIXT2pFeY6WV7SyxK4URUF/DLb60UK7FC20tVHLdiH6UxDUO5AwTP7wh3mmOAMPDN/3MfPwXd7vfQHiz3f0FASD4/MZZpRX/bgmQipqFSV/LIDgObtclp3cQem1qKa1F3LcT54TrFaUHSdN81E7pfcPalohNg31jFwGgNluGJfOWNa7s5b1vo2QSCbLDveM4JpQKBdn7/75YcM+2rRQ2rNNFBd6xS+xXtdPdpnmm17B06b5qpmQ6tEATKzlfEkASSj0p728TpoN42JGQsKEmAtOAZi6XZIO7JTlFiebRLFyPsNMi6ldOcCQHI5becIwHnZb1lsnGBNvF4vibzEVXIyhJJfnV3ea5r91mhbepSircDbXRXW9s4GQmxtCoWJPCJ4yjEdhSVo+CWAMLvnEfbK8+4iuX/eUIAbqJeMARqQCJO9VlIrDmnZ1UAQzAYZncVxqjiBMcbIQr7ORAPIyni9CwX9QsKyQ57MxYVhRo6pNEV2/MSiCW0VxyR5FidbqepeT/ap6DENMSg7PF3caxlNc0is7JKm6XJbrGnT990ZC7gyKIC5VOd4Sj3uDcC/dpvk8IxCYvZTn1+IMPsVT210qSWUVklSK9/HVZkr/8IwgnuIn9h7MTkiYODcQ+PGEaW5spPSWpwQjhKyYBfDDPIYZ2WEYZQMp6JsO4O+L/griVfcM99y9LaIYLpPlSCulD1oM496ACC4LBlMwVKx1k8fzJUuDQdpfwXOW9eHc53TLfh8oQR9u8NWnLev/L0ABzFAm9FfQ3T9ggmdxQ7s/bmPPwhlK0+KCXhf0jwcgOSyb5mZOYmIynlQtpoJ2fZobCMyqxpTcDUb9qiK8U2MqaM/QZhzUlwAG0rtVGP3jgt+CoA8Z0gc+TwhO9vvTfxGEAhy4xskCls1OwfQ75oJY1Vd0YFV/Cgc5iVJ6ISsYzIu54AZJqumyrNfuAZgw3lzEcQVxwbjg1xYsCYUqMcX+Gw/GCydRQi5nMUzeekHId/fZ2GVhpar+jBVZUV/9yH92Plgry5tbCbnr7j9uGH+l+/0zsPxc1Ybv2PbSyVFCekrw35DP84ux5KtpICTqpEpVt2aybHoBz09399lgcV26TRRT6wmZiR+LuPux7UidJI0uF4R5h1R1t7s/omn70gCSFjDMDJzlMJaa9U7CirLrV/z3Jz3ywZkCMaMKAAAAAElFTkSuQmCC',
+  link: 'https://bigredhacks.com/',
+  more: {
+    logo:
+      'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/225/thumb/pp2.png?1564759341',
+    thumbnail:
+      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/225/thumb/cornelltower.jpg?1564759341',
+  },
+};
+
 module.exports = [
   mangohacks,
   shellhacks,
@@ -146,4 +206,7 @@ module.exports = [
   sunhacks,
   pennapps,
   minnehack,
+  citizenhacks,
+  hackthenorth,
+  bigredhacks,
 ];
