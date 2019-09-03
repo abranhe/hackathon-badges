@@ -9,8 +9,9 @@ export default {
   search: {
     value: '',
     hackathons: [],
+    heading: 'Featured hackathons',
   },
   collapsed: false,
-  badges,
+  // badges,
   featuredHackathons: filterByMiami(),
 };
