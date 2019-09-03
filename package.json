@@ -16,10 +16,14 @@
     "start": "cross-env NODE_ENV=production node server.js",
     "test": "echo 'Working on it'"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "dependencies": {
     "clipboard-copy": "^3.1.0",
     "express": "^4.14.0",
     "gh-badges": "^2.2.1",
+    "new-github-issue-url": "^0.2.1",
     "next": "latest",
     "prop-types": "^15.7.2",
     "react": "^16.7.0",

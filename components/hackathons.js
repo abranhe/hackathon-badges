@@ -1,58 +1,87 @@
 import React, { Component } from 'react';
-import badges from '../badges';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import Hackathon from './hackathon';
 import Popup from './popup';
-import Badge from './badge';
 
-export default class hackathon extends Component {
+class HackathonList extends Component {
   state = {
     popup: false,
-    heading: 'Featured Hackathons',
     hackathon: {},
   };
 
-  render() {
+  onClick(hackathon) {
+    this.setState({ hackathon: hackathon, popup: true });
+  }
+
+  renderHeading() {
     return (
-      <div className='logos'>
-        <div className='content-container'>
-          {this.state.popup && (
-            <Popup
-              hackathonInfo={this.state.hackathon}
-              onClose={() => {
-                this.setState({ popup: false });
-              }}
-            />
-          )}
+      <div className="logos__title">
+        <h3>{this.props.heading}</h3>
+      </div>
+    );
+  }
+
+  renderPopup() {
+    return (
+      <Popup
+        hackathonInfo={this.state.hackathon}
+        onClose={() => {
+          this.setState({ popup: false });
+        }}
+      />
+    );
+  }
+
+  renderHackathons() {
+    let hackathons = this.props.featuredHackathons;
+
+    if (this.props.hackathons.length) {
+      hackathons = this.props.hackathons;
+    }
+
+    return (
+      <div>
+        {hackathons.map((hackathon) => (
+          <Hackathon
+            key={hackathon.path}
+            hackathon={hackathon}
+            onClick={() => this.onClick(hackathon)}
+          />
+        ))}
+      </div>
+    );
+  }
+
+  render() {
+    const { popup } = this.state;
+
+    return (
+      <div className="logos">
+        <div className="content-container">
+          {popup && this.renderPopup()}
           <div>
-            {this.state.heading && (
-              <div className='logos__title'>
-                <h3>{this.state.heading}</h3>
-              </div>
-            )}
-            <ul>
-              {badges.map((badge) => {
-                return (
-                  <a
-                    key={badge.path}
-                    onClick={() =>
-                      this.setState({ hackathon: badge, popup: true })}>
-                    <li className='brand-logo brand-logo_collected brand-logo_considering'>
-                      <div className='brand-logo__image flex-center'>
-                        <img src={badge.more.thumbnail} alt={badge.name} />
-                      </div>
-                      <div className='brand-logo__ctas'>
-                        <strong>{badge.name}</strong>
-                      </div>
-                      <div className='brand-logo__badge'>
-                        <Badge path={badge.path} />
-                      </div>
-                    </li>
-                  </a>
-                );
-              })}
-            </ul>
+            {this.props.heading && this.renderHeading()}
+            <ul>{this.renderHackathons()}</ul>
           </div>
         </div>
       </div>
     );
   }
 }
+
+HackathonList.propTypes = {
+  hackathons: PropTypes.array,
+};
+
+HackathonList.defaultProps = {
+  hackathons: [],
+};
+
+const mapStateToProps = (state) => ({
+  hackathons: state.search.hackathons,
+  heading: state.search.heading,
+  featuredHackathons: state.featuredHackathons,
+});
+
+export default connect(mapStateToProps)(HackathonList);
