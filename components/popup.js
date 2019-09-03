@@ -20,12 +20,12 @@ function Popup({ onClose, hackathonInfo: { link, path, name, location } }) {
 
   return (
     <Modal
-      backdropClassName='popup__container flex'
-      modalClassName='popup'
+      backdropClassName="popup__container flex"
+      modalClassName="popup"
       onClose={onClose}>
-      <div className='popup__messaging'>
+      <div className="popup__messaging">
         <div>
-          <div className='hackathon-name-popup'>
+          <div className="hackathon-name-popup">
             <strong>{name}</strong>
             <CopyButton
               colors={colors}
@@ -43,14 +43,16 @@ function Popup({ onClose, hackathonInfo: { link, path, name, location } }) {
           </div>
           <h2>{location}</h2>
         </div>
-        <Badge path={path} template='for-the-badge' />
+        <a href={link} target="_black">
+          <Badge path={path} template="for-the-badge" />
+        </a>
       </div>
-      <div className='popup__contributors-container'>
+      <div className="popup__contributors-container">
         <h4>HTML</h4>
-        <Highlight language='html'>{html}</Highlight>
+        <Highlight language="html">{html}</Highlight>
         <br />
         <h4>Markdown</h4>
-        <Highlight language='markdown'>{markdown}</Highlight>
+        <Highlight language="markdown">{markdown}</Highlight>
       </div>
     </Modal>
   );
