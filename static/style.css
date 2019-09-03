@@ -260,10 +260,14 @@ li {
 .footer {
   height: 100px;
   padding: 0 30px;
-  /* position: absolute; */
-  /* width: 100%; */
+  width: 100%;
   bottom: 5px;
 }
+
+.footer-with-less-than-5-results {
+  position: absolute;
+}
+
 .footer__top {
   padding: 15px 0;
   margin-bottom: 10px;
@@ -317,10 +321,11 @@ li {
 .footer span {
   color: rgba(0, 0, 0, .6);
 }
-.footer .kogg-website {
+.footer .abranhe-website {
   color: rgba(0, 0, 0, .6);
+  text-decoration: none;
 }
-.footer .kogg-website:hover {
+.footer .abranhe-website:hover {
   color: black;
 }
 .footer .terms-page {
@@ -501,6 +506,14 @@ li {
   margin: 0 20px 20px 0;
   display: inline-block;
   vertical-align: top;
+}
+.brand-logo-center {
+  bottom: 30%;
+  position: absolute;
+  padding: 7px;
+  background-color: white;
+  width: 90px;
+  height: 90px;
 }
 .brand-logo_collected {
   position: static;

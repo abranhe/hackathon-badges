@@ -33,21 +33,31 @@ class Header extends Component {
     search({ searchValue: value });
   };
 
-  onLogoClick = () => {g
-    if (!this.props.collapsed) {
-      return;
-    }
-
-    this.props.uncollapse();
-    // this.refs.search.select();
+  onLogoClick = () => {
+    this.forceUpdate();
   };
 
-  onClick = (e) => e.stopPropagation();
+  onClick = (e) => {
+    // this.forceUpdate();
+    this.props.clearSearch();
+    // e.stopPropagation();
+    // const {
+    //   searchValue: value,
+    //   collapse,
+    //   uncollapse,
+    //   collapsed,
+    //   search,
+    // } = this.props;
+
+    // value ? (!collapsed ? collapse() : null) : uncollapse();
+
+    // search({ searchValue: value });
+  };
 
   render() {
     return (
       <div
-        className={`header ${this.props.collapsed ? 'header_collapsed' : null}`}
+        className={`header ${this.props.collapsed ? 'header_collapsed' : ''}`}
         onClick={function(e) {
           if (!this.state.collapsed) {
             return;
@@ -56,11 +66,11 @@ class Header extends Component {
           e.preventDefault();
           // this.refs.search.select();
         }.bind(this)}>
-        <div className='content-container'>
-          <div className='flex-spread'>
+        <div className="content-container">
+          <div className="flex-spread">
             <a
-              href='/'
-              className='logo'
+              href="/"
+              className="logo"
               onClick={function(e) {
                 if (!this.state.collapsed) {
                   return;
@@ -73,10 +83,10 @@ class Header extends Component {
             />
             <ShareButtons facebook={false} />
           </div>
-          <div className='header-content'>
+          <div className="header-content">
             <h1>Hackathon Badges</h1>
             <h2>Dynamic badges for all your Hackathons projects</h2>
-            <div className='search-container'>
+            <div className="search-container">
               <SearchBar
                 onSubmit={this.onSubmit}
                 onLogoClick={this.onLogoClick}
@@ -96,6 +106,7 @@ Header.propTypes = {
   search: PropTypes.func,
   collapse: PropTypes.func,
   uncollapse: PropTypes.func,
+  clearSearch: PropTypes.func,
   searchValue: PropTypes.string,
   collapsed: PropTypes.bool,
 };
@@ -104,6 +115,7 @@ Header.defaultProps = {
   search: Function.prototype,
   collapse: Function.prototype,
   uncollapse: Function.prototype,
+  clearSearch: Function.prototype,
   searchValue: '',
   collapsed: false,
 };
@@ -112,6 +124,7 @@ const mapDispatchToProps = (dispatch) => ({
   search: bindActionCreators(actions.search, dispatch),
   collapse: bindActionCreators(actions.collapse, dispatch),
   uncollapse: bindActionCreators(actions.uncollapse, dispatch),
+  clearSearch: bindActionCreators(actions.clearSearch, dispatch),
 });
 
 const mapStateToProps = (state) => ({

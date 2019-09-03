@@ -1,18 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { useRouter } from 'next/router';
+import { bindActionCreators } from 'redux';
 import Head from 'next/head';
 import Header from '../components/header';
 import Hackathons from '../components/hackathons';
 import Footer from '../components/footer';
-import types from '../store/types';
+import actions from '../store/actions';
 
-function App({ dispatch }) {
+function App({ collapse, uncollapse, collapsed, search }) {
   const router = useRouter();
-  const { q: query } = router.query;
+  const { q: searchValue } = router.query;
 
-  if (query) {
-    dispatch({ type: types.SEARCHING, searchValue: query });
+  if (searchValue) {
+    searchValue ? (!collapsed ? collapse() : null) : uncollapse();
+
+    search({ searchValue });
   }
 
   return (
@@ -29,4 +33,28 @@ function App({ dispatch }) {
   );
 }
 
-export default connect()(App);
+App.propTypes = {
+  search: PropTypes.func,
+  collapse: PropTypes.func,
+  uncollapse: PropTypes.func,
+  collapsed: PropTypes.bool,
+};
+
+App.defaultProps = {
+  search: Function.prototype,
+  collapse: Function.prototype,
+  uncollapse: Function.prototype,
+  collapsed: false,
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  search: bindActionCreators(actions.search, dispatch),
+  collapse: bindActionCreators(actions.collapse, dispatch),
+  uncollapse: bindActionCreators(actions.uncollapse, dispatch),
+});
+
+const mapStateToProps = (state) => ({
+  collapsed: state.collapsed,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

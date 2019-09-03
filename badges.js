@@ -32,7 +32,7 @@ const shellhacks = {
   link: 'https://shellhacks.net',
   more: {
     logo:
-      'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/202/thumb/__MLH_Banner__300_x_300_.png?1557514832',
+      'https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/202/thumb/__MLH_Icon__100_x_100_.png?1557514832',
     thumbnail:
       'https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/202/thumb/__MLH_Banner__300_x_300_.png?1557514832',
   },
@@ -53,7 +53,7 @@ const uhack = {
   link: 'https://uhack.miami',
   more: {
     logo:
-      'https://scontent.fmia1-2.fna.fbcdn.net/v/t1.0-9/23472369_1492435167508264_4800876244545045884_n.png?_nc_cat=111&_nc_oc=AQmv9LlqOj4NyCzciofBE6Lcz6jvohY-9ZzedE5bmP5di_UGrNYkQbNvjnXrGYLuESuzDwRLvboxXzpGAswJDfpw&_nc_ht=scontent.fmia1-2.fna&oh=7907729265d4f9245e869426f0e1f2c9&oe=5DD3875E',
+      'https://scontent.fmia1-2.fna.fbcdn.net/v/t1.0-9/23472369_1492435167508264_4800876244545045884_n.png?_nc_cat=111&_nc_oc=AQmv9LlqOj4NyCzciofBE6Lcz6jvohY-9ZzedE5bmP5di_UGrNYkQbNvjnXrGYLuESuzDwRLvboxXzpGAswJDfpw&_nc_ht=scontent.fmia1-2.fna&oh=7907729265d4f9245e869426f0e1f2c9&oe=5DD3875E&s=100',
     thumbnail: 'https://uhack.miami/img/um-campus.jpg',
   },
 };

@@ -13,7 +13,7 @@ async function copyMarkup(message) {
 
 function Popup({ onClose, hackathonInfo: { link, path, name, location } }) {
   const [ colors, changeColors ] = useState([ '#0076ff', '#0076ff' ]);
-  const [ placeholder, changePlaceholder ] = useState('Copy badge');
+  const [ placeholder, changePlaceholder ] = useState('Copy');
 
   const html = buildHtml({ link, path, name });
   const markdown = buildMarkdown({ link, path, name });
@@ -36,7 +36,7 @@ function Popup({ onClose, hackathonInfo: { link, path, name, location } }) {
                 changePlaceholder('Copied!');
                 setTimeout(() => {
                   changeColors([ '#0076ff', '#0076ff' ]);
-                  changePlaceholder('Copy badge!');
+                  changePlaceholder('Copy!');
                 }, 500);
               }}
             />
