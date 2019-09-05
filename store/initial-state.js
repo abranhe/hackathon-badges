@@ -8,7 +8,7 @@ export default {
   search: {
     value: '',
     hackathons: [ ...badges ],
-    heading: 'Search results',
+    heading: 'Popular hackathons',
   },
   collapsed: false,
   featuredHackathons: filterByMiami(),
