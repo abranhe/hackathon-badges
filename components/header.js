@@ -34,6 +34,7 @@ class Header extends Component {
   };
 
   onLogoClick = () => {
+    Router.push({ pathname: '/' });
     this.forceUpdate();
   };
 

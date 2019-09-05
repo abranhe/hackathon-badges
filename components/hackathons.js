@@ -36,18 +36,17 @@ class HackathonList extends Component {
   }
 
   renderHackathons() {
-    let hackathons = [];
+    const { hackathons, setHeading, collapsed } = this.props;
 
-    if (this.props.hackathons.length) {
-      this.props.setHeading({ heading: 'Search results' });
-      hackathons = this.props.hackathons;
-    } else {
-      this.props.setHeading({ heading: 'Nothing found' });
-    }
+    hackathons.length
+      ? collapsed
+        ? setHeading({ heading: 'Search results' })
+        : setHeading({ heading: 'Popular hackathons' })
+      : setHeading({ heading: 'Nothing found' });
 
     return (
       <div>
-        {this.props.hackathons.map((hackathon) => (
+        {hackathons.map((hackathon) => (
           <Hackathon
             key={hackathon.path}
             hackathon={hackathon}
@@ -89,6 +88,7 @@ const mapStateToProps = (state) => ({
   hackathons: state.search.hackathons,
   heading: state.search.heading,
   featuredHackathons: state.featuredHackathons,
+  collapsed: state.collapsed,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(HackathonList);
