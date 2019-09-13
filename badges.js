@@ -19,12 +19,12 @@ const mangohacks = {
 };
 
 /**
- * Shellhacks Badge
+ * ShellHacks Badge
  * https://shellhacks.net
  */
 const shellhacks = {
   path: 'shellhacks',
-  name: 'Shellhacks',
+  name: 'ShellHacks',
   location: 'Miami, FL, United States',
   colorA: '#ff1f8f',
   logo:
